@@ -6,12 +6,22 @@ import geritch from "../../public/static/gericht.png";
 import Link from "next/link";
 import { useState } from "react";
 
+const menu = ["Home", "About", "Menu", "Awards", "Contact"];
+
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   const toggleBtn = () => {
     setToggleMenu((prevState) => !prevState);
   };
+
+  const menuList = menu.map((menuItem, index) => {
+    return (
+      <li key={index} className="p__opensans">
+        <Link href={`#${menuItem.toLocaleLowerCase()}`}>{menuItem}</Link>
+      </li>
+    );
+  });
 
   return (
     <nav className={classes["app__navbar"]}>
@@ -24,23 +34,7 @@ const Navbar = () => {
           height={65}
         />
       </div>
-      <ul className={classes["app__navbar-links"]}>
-        <li className="p__opensans">
-          <Link href={"#home"}>Home</Link>
-        </li>
-        <li className="p__opensans">
-          <Link href={"#about"}>About</Link>
-        </li>
-        <li className="p__opensans">
-          <Link href={"#menu"}>Menu</Link>
-        </li>
-        <li className="p__opensans">
-          <Link href={"#awards"}>Awards</Link>
-        </li>
-        <li className="p__opensans">
-          <Link href={"#contact"}>Contact</Link>
-        </li>
-      </ul>
+      <ul className={classes["app__navbar-links"]}>{menuList}</ul>
       <div className={classes["app__navbar-login"]}>
         <Link href={"#login"}>
           <a className="p__opensans">Log In / Register</a>
@@ -62,21 +56,7 @@ const Navbar = () => {
               onClick={toggleBtn}
             />
             <ul className={classes["app__navbar-smallscreen-links"]}>
-              <li className="p__opensans">
-                <Link href={"#home"}>Home</Link>
-              </li>
-              <li className="p__opensans">
-                <Link href={"#about"}>About</Link>
-              </li>
-              <li className="p__opensans">
-                <Link href={"#menu"}>Menu</Link>
-              </li>
-              <li className="p__opensans">
-                <Link href={"#awards"}>Awards</Link>
-              </li>
-              <li className="p__opensans">
-                <Link href={"#contact"}>Contact</Link>
-              </li>
+              {menuList}
             </ul>
           </div>
         )}
