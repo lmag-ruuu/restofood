@@ -19,12 +19,12 @@
 }
 
 .app__header-img {
-  object-fit: contain;
-  width: 100% !important;
-  position: relative !important;
-  height: unset !important;
+  width: 80%;
+  height: initial;
+  position: relative;
+  height: 80%;
 }
 
-.app__wrapper_img .image-header {
-  width: 80%;
+.image-header {
+  position: absolute;
 }

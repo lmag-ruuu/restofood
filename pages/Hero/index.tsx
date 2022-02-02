@@ -23,10 +23,14 @@ const Header: NextPage = () => {
         </button>
       </div>
 
-      <div className={classes["app__wrapper_img"]}>
+      <div className={classes["app__header-img"]}>
         <Image
           src={welcome}
           alt="header img, salad food"
+          width="100%"
+          height="100%"
+          layout="responsive"
+          objectFit="cover"
           className="image-header"
         />
       </div>
