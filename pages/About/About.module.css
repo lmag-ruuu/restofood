@@ -1,0 +1,65 @@
+.app__aboutus {
+  position: relative;
+  height: 100vh;
+}
+
+.app__aboutus-overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.GLetter {
+  z-index: 0;
+}
+
+.app__aboutus-content {
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.app__aboutus-content_about {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: right;
+  z-index: 2;
+}
+
+.app__aboutus-content_knife {
+  position: relative;
+  margin: 2rem 4rem;
+  width: 84px;
+  height: 703px;
+}
+
+.app__aboutus-content_history {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+  z-index: 2;
+}
+
+.app__aboutus-content_history p,
+.app__aboutus-content_about p {
+  margin: 2rem 0;
+  color: var(--color-grey);
+}
+
+@media screen and (min-width: 2000px) {
+  .app__aboutus-content_knife {
+    margin: 4rem 0;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .app__aboutus-content {
+    flex-direction: row;
+  }
+}
