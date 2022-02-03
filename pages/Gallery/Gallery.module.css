@@ -1,0 +1,11 @@
+.app__gallery {
+  display: flex;
+  flex-direction: row;
+  background: var(--color-black);
+  padding: 4rem 0 4rem 6rem;
+}
+
+.app__gallery-content :nth-child(3) {
+  color: #aaa;
+  margin-top: 2rem;
+}
