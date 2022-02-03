@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar/Navbar";
 import Hero from "./Hero";
 import About from "./About";
 import Menu from "./SpecialMenu";
+import Chef from "./Chef";
 
 const Home: NextPage = () => {
   return (
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
       <Hero />
       <About />
       <Menu />
+      <Chef />
     </div>
   );
 };
