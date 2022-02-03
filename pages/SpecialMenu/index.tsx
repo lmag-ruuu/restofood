@@ -1,7 +1,6 @@
 import { NextPage } from "next";
 import NextImage from "next/image";
 import SubHeading from "../../components/SubHeading/SubHeading";
-import Menuitem from "../../components/Menuitem/Menuitem";
 import classes from "./SpecialMenu.module.css";
 import wines from "../../src/wines";
 import cocktails from "../../src/cocktails";
