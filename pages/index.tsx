@@ -5,6 +5,7 @@ import Hero from "./Hero";
 import About from "./About";
 import Menu from "./SpecialMenu";
 import Chef from "./Chef";
+import Intro from "./Intro";
 
 const Home: NextPage = () => {
   return (
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
       <About />
       <Menu />
       <Chef />
+      <Intro />
     </div>
   );
 };
