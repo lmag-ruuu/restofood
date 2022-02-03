@@ -1,8 +1,10 @@
 import { NextPage } from "next";
+import NextImage from "next/image";
 import SubHeading from "../../components/SubHeading/SubHeading";
 import awards from "../../src/awards";
 import classes from "./Awards.module.css";
 import AwardCard from "../../components/AwardCard/AwardCard";
+import laurels from "../../public/static/laurels.png";
 
 const Awards: NextPage = () => {
   return (
@@ -22,7 +24,11 @@ const Awards: NextPage = () => {
           ))}
         </div>
       </div>
-      <div className="app__wrapper_img"></div>
+      <div className="app__wrapper_img">
+        <div className={classes["app__awards-image"]}>
+          <NextImage src={laurels} alt="laurels image" />
+        </div>
+      </div>
     </div>
   );
 };
