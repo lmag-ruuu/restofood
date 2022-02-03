@@ -18,7 +18,9 @@ const Chef: NextPage = () => {
 
         <div className={classes["app__chef-content"]}>
           <div className={classes["app__chef-content_quote"]}>
-            <NextImage src={quoteImg} alt="Open quote img" />
+            <div className={classes["quote__img"]}>
+              <NextImage src={quoteImg} alt="Open quote img" />
+            </div>
             <p className="p__opensans">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor
               sit.
@@ -34,7 +36,9 @@ const Chef: NextPage = () => {
         <div className={classes["app__chef-sign"]}>
           <p>Kevin Luo</p>
           <p className="p__opensans">Chef and Founder</p>
-          <NextImage src={signImg} alt="image sign" />
+          <div className={classes["sign__img"]}>
+            <NextImage src={signImg} alt="image sign" />
+          </div>
         </div>
       </div>
     </div>
