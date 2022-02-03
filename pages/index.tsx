@@ -6,6 +6,7 @@ import About from "./About";
 import Menu from "./SpecialMenu";
 import Chef from "./Chef";
 import Intro from "./Intro";
+import Awards from "./Awards";
 
 const Home: NextPage = () => {
   return (
@@ -24,6 +25,7 @@ const Home: NextPage = () => {
       <Menu />
       <Chef />
       <Intro />
+      <Awards />
     </div>
   );
 };
