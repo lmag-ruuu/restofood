@@ -3,7 +3,7 @@ import Head from "next/head";
 import Navbar from "../components/Navbar/Navbar";
 import Hero from "./Hero";
 import About from "./About";
-import styles from "../styles/Home.module.css";
+import Menu from "./SpecialMenu";
 
 const Home: NextPage = () => {
   return (
@@ -19,6 +19,7 @@ const Home: NextPage = () => {
       <Navbar />
       <Hero />
       <About />
+      <Menu />
     </div>
   );
 };
