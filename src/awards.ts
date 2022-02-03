@@ -1,21 +1,26 @@
+import award02 from "../public/static/award02.png";
+import award01 from "../public/static/award01.png";
+import award03 from "../public/static/award03.png";
+import award05 from "../public/static/award05.png";
+
 const awards = [
   {
-    imgPathName: "award02",
+    awardImg: award02,
     title: "Bib Gourmond",
     subtitle: "Lorem ipsum dolor sit amet, consectetur.",
   },
   {
-    imgPathName: "award01",
+    awardImg: award01,
     title: "Rising Star",
     subtitle: "Lorem ipsum dolor sit amet, consectetur.",
   },
   {
-    imgPathName: "award05",
+    awardImg: award03,
     title: "AA Hospitality",
     subtitle: "Lorem ipsum dolor sit amet, consectetur.",
   },
   {
-    imgPathName: "award03",
+    awardImg: award05,
     title: "Outstanding Chef",
     subtitle: "Lorem ipsum dolor sit amet, consectetur.",
   },

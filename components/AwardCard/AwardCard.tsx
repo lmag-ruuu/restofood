@@ -4,18 +4,19 @@ import classes from "./AwardCard.module.css";
 
 interface Award {
   title: string;
-  imgPathName: string;
+  awardImg: StaticImageData;
   subTitle: string;
 }
 
-const AwardCard: NextPage<Award> = ({ title, imgPathName, subTitle }) => {
+const AwardCard: NextPage<Award> = ({ title, awardImg, subTitle }) => {
   return (
     <div className={classes["app__laurels_awards-card"]}>
       <div className={classes["img__award-container"]}>
         <NextImage
-          src={`/static/${imgPathName}.png`}
-          width={80}
-          height={80}
+          src={awardImg}
+          layout="fixed"
+          width={50}
+          height={50}
           alt="award"
         />
       </div>

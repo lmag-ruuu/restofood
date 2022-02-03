@@ -19,7 +19,7 @@ const Awards: NextPage = () => {
               key={award.title + index}
               title={award.title}
               subTitle={award.subtitle}
-              imgPathName={award.imgPathName}
+              awardImg={award.awardImg}
             />
           ))}
         </div>

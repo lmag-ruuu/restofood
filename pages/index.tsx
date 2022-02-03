@@ -24,7 +24,7 @@ const Home: NextPage = () => {
       <About />
       <Menu />
       <Chef />
-      <Intro />
+      {/* <Intro /> */}
       <Awards />
     </div>
   );

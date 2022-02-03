@@ -1,2 +1,14 @@
 .app__laurels_awards {
+  display: flex;
+  justify-self: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin-top: 3rem;
+}
+
+.app__awards-image {
+  position: relative;
+  width: 483px;
+  height: 691px;
 }
