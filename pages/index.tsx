@@ -27,7 +27,7 @@ const Home: NextPage = () => {
       <About />
       <Menu />
       <Chef />
-      {/* <Intro /> */}
+      <Intro />
       <Awards />
       <Gallery />
       <FindUs />
