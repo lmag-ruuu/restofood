@@ -1,8 +1,40 @@
 import { NextPage } from "next";
+import NextImage from "next/image";
 import classes from "./FindUs.module.css";
+import findus from "../../public/static/findus.png";
+import SubHeading from "../../components/SubHeading/SubHeading";
 
 const FindUs: NextPage = () => {
-  return <div>Find Us</div>;
+  return (
+    <div className="app__bg app__wrapper section__padding" id="contact">
+      <div className="app__wrapper_info">
+        <SubHeading subTitle="Contact" />
+        <h1 className={`headtext__cormorant ${classes["head__text-h1"]}`}>
+          Find Us
+        </h1>
+        <div className="app__wrapper-content">
+          <p className="p__opensans">
+            Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 7SG
+          </p>
+
+          <p className={`${classes["findus__p"]} p__cormorant`}>
+            Opening Hours
+          </p>
+
+          <p className="p__opensans">Mon - Fri: 10:00 am - 02:00 am</p>
+          <p className="p__opensans">Sat - Sun: 10:00 am - 03:00 am</p>
+        </div>
+        <button className={`${classes["findus__btn"]} custom__button`}>
+          Visit Us
+        </button>
+      </div>
+      <div className="app__wrapper_img">
+        <div className={classes["image-contact"]}>
+          <NextImage src={findus} alt="drink photo" layout="fill" />
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default FindUs;

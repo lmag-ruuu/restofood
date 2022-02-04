@@ -1,0 +1,18 @@
+.image-contact {
+  position: relative;
+  width: 410px;
+  height: 520px;
+}
+
+.head__text-h1 {
+  margin-bottom: 3rem;
+}
+
+.findus__p {
+  color: var(--color-golden);
+  margin: 2rem 0;
+}
+
+.findus__btn {
+  margin-top: 2rem;
+}
