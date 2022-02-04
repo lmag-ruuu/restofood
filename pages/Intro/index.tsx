@@ -6,7 +6,7 @@ import { BsFillPlayFill, BsPauseFill } from "react-icons/bs";
 import classes from "./Intro.module.css";
 
 const Intro: NextPage = () => {
-  const [playVideo, setPlayVideo] = useState(false);
+  const [playVideo, setPlayVideo] = useState(true);
   const vidRef = useRef<HTMLVideoElement>(null);
 
   const handleVideo = () => {

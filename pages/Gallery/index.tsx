@@ -20,7 +20,7 @@ const Gallery: NextPage = () => {
       if (direction === "left") {
         current.scrollLeft -= 300;
       } else {
-        current.scrollLeft + -300;
+        current.scrollLeft += 300;
       }
     }
   };
@@ -49,14 +49,14 @@ const Gallery: NextPage = () => {
               key={`gallery_image-${index + 1}`}
               className={`${classes["app__gallery-images_card"]} flex__center`}
             >
-              <div className={classes['"app__gallery-image_container']}>
-                <NextImage src={image} alt="image gallery" />
+              <div className={classes["app__gallery-image_container"]}>
+                <NextImage src={image} alt="image gallery" layout="fill" />
               </div>
               <BsInstagram className={classes["gallery__image-icon"]} />
             </div>
           ))}
         </div>
-        <div className={classes["app__gallery-images_arrow"]}>
+        <div className={classes["app__gallery-images_arrows"]}>
           <BsArrowLeftShort
             className={classes["gallery__arrow-icon"]}
             onClick={() => scroll("left")}
