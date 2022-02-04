@@ -9,6 +9,7 @@ import Intro from "./Intro";
 import Awards from "./Awards";
 import Gallery from "./Gallery";
 import FindUs from "./FindUs";
+import Footer from "./Footer";
 
 const Home: NextPage = () => {
   return (
@@ -30,6 +31,7 @@ const Home: NextPage = () => {
       <Awards />
       <Gallery />
       <FindUs />
+      <Footer />
     </div>
   );
 };
